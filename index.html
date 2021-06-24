@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="generator.js"></script>  
-    
-    <title>Excuse generator</title>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="card">
-            <div class="card-head">
-                <div class="title"><h1>OMG! you will not believe me but...</h1></div>
-            </div>
-            <div class="card-body">
-                <p id="excuse">My dog ate my homework</p>
-            </div>
-        </div>
-    </div>
-</body>
+<html>
+   <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+   </head>
+   <body>
+         <p id="excuse">No vas a creer lo que me paso... </p>
+         <script>
+                function excuse(){         
+                 let who = ["mi tia ", "mi perro ", "el cartero ", "un fantasma ", "mi vecina " ];
+                 let action =["subio ","tiro ","robo ","rompio ","quemo "];
+                 let what = [ "un camion ", "mis zapatillas ","mi coche ","el ordenador","la nevera "];
+                 let where =[ "debajo de la cama", "en el rio", "en el balcon","detras de la puerta"];
+                
+                var quien = who[Math.floor(Math.random() *5)];
+                var accion = action[Math.floor(Math.random() *5)];
+                var que = what[Math.floor(Math.random() *5)];
+                var donde = where[Math.floor(Math.random() *5)];
+                document.write(quien+accion+que+donde);
+                 
+             }
+             excuse();
+         </script>
+
+   </body>
 </html>
